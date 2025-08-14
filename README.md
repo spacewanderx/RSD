@@ -11,13 +11,15 @@ Existing methods introduce sophisticated modules, architecture-tailored designs,
 and excessive parameters, which impair their efficiency and applicability.
 We propose to extract the architecture-agnostic knowledge in heterogeneous representations
 by reducing the redundant architecture-exclusive information. To this end, we present a
-simple redundancy suppression distillation (RSD) loss, which comprises cross-architecture
-invariance maximisation and feature decorrelation objectives. To prevent the student from
-entirely losing its architecture-specific capabilities, we further design a lightweight
-module that decouples the RSD objective from the student's internal representations. 
+simple RSD loss, which comprises cross-architecture invariance maximisation and feature 
+decorrelation objectives. To prevent the student from entirely losing its architecture-specific
+capabilities, we further design a lightweight module that decouples the RSD objective from the
+student's internal representations. 
 
 
-<img src="assets/rsd.png" width="750px"/>
+<div style="text-align: center;">
+    <img src="assets/rsd.png" width="750px"/>
+</div>
 
 
 
@@ -84,9 +86,9 @@ python validate.py data/cifar100 --dataset cifar100 --num-classes 100 --model sw
 
 You may easily customise the code for your own method and experiments.
 
-**Method**: to implement your own knowledge distillation method, follow the examples in the `./distillers` folder.
+Method: to implement your own knowledge distillation method, follow the examples in the `./distillers` folder.
 
-**Architecture**: to support arbitrary model architectures, follow the examples in the `./custom_model` folder. If intermediate features of the new model are required for KD, rewrite its `forward()` method following examples in the `./custom_forward` folder.
+Architecture: to support arbitrary model architectures, follow the examples in the `./custom_model` folder. If intermediate features of the new model are required for KD, rewrite its `forward()` method following examples in the `./custom_forward` folder.
 
 ## Acknowledgement
 
