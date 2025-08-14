@@ -17,9 +17,9 @@ capabilities, we further design a lightweight module that decouples the RSD obje
 student's internal representations. 
 
 
-<div style="text-align: center;">
-    <img src="assets/rsd.png" width="750px"/>
-</div>
+<p align="center">
+  <img src="assets/rsd.png" width="750px"/>
+</p>
 
 
 
